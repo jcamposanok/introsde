@@ -1,8 +1,8 @@
 import java.util.HashMap;
 import java.util.Map;
 
-import pojos.HealthProfile;
-import pojos.Person;
+import ex2.pojos.HealthProfile;
+import ex2.pojos.Person;
 
 public class HealthProfileReader {
 
