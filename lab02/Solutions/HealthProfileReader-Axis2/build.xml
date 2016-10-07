@@ -3,8 +3,8 @@
 
 	<property environment="env" />
 	<!-- Remember, update the following to fit your filesystem -->
-	<property name="AXIS2_HOME" value="/opt/axis2-1.6.2" />
-	<property name="AXIS2_HOME_TOMCAT" value="/opt/apache-tomcat-8.0.9/webapps/axis2" />
+	<property name="AXIS2_HOME" value="C:\axis2-1.6.4" />
+	<property name="AXIS2_HOME_TOMCAT" value="C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\axis2" />
 	<property name="build.dir" value="build" />
 
 	<path id="axis2.classpath">
@@ -56,7 +56,6 @@
 	              toDir="${AXIS2_HOME}/repository/services"
 	              overwrite="yes">
 		</copy>
-
 		<!-- deploy to axis2 web application deployed in tomcat -->
 		<copy file="${build.dir}/HealthProfileReader.aar"
 	              toDir="${AXIS2_HOME_TOMCAT}/WEB-INF/services"
@@ -68,7 +67,6 @@
 		<!-- remove the service from axis2 standalone server -->
 		<delete file="${AXIS2_HOME}/repository/services/HealthProfileReader.aar">
 		</delete>
-
 		<!-- remove the service from axis2 web application deployed in tomcat -->
 		<delete file="${AXIS2_HOME_TOMCAT}/WEB-INF/services/HealthProfileReader.aar">
 		</delete>

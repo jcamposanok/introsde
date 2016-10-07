@@ -21,8 +21,8 @@
 
     <property environment="env"/>
     <!-- Remember, update the following to fit your filesystem --> 
-    <property name="AXIS2_HOME" value="/opt/axis2-1.6.2"/>
-    <property name="AXIS2_HOME_TOMCAT" value="/opt/apache-tomcat-7.0.39/webapps/axis2"/>
+    <property name="AXIS2_HOME" value="C:\axis2-1.6.4"/>
+    <property name="AXIS2_HOME_TOMCAT" value="C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\axis2"/>
 
     <property name="build.dir" value="build"/>
 
@@ -75,7 +75,6 @@
               toDir="${AXIS2_HOME}/repository/services"
               overwrite="yes">  
         </copy>
-
         <!-- deploy to axis2 web application deployed in tomcat -->
         <copy file="${build.dir}/StockQuoteService.aar"
               toDir="${AXIS2_HOME_TOMCAT}/WEB-INF/services"
